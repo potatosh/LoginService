@@ -1,5 +1,0 @@
-27 7 2011 18:46:22,538 INFO  ~ Starting C:\play-1.2.2\LoginService
-27 7 2011 18:46:23,241 WARN  ~ You're running Play! in DEV mode
-27 7 2011 18:46:23,397 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-27 7 2011 18:46:28,444 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
-27 7 2011 18:46:29,835 INFO  ~ Application 'Login Service Test' is now started !
