@@ -7,8 +7,10 @@ public class BasicTest extends UnitTest {
 
 	@Test
 	public void testAll() {
+//		System.out.println("started");
 		if(User.find("byUserID", "potatosh").first() == null) {
 			Fixtures.loadModels("testuser.yml");
+//			System.out.println("loaded");
 		}
 
 		createUserTest();
@@ -16,6 +18,9 @@ public class BasicTest extends UnitTest {
 	}
 
 	private void createUserTest() {
+		//Userをつくってデータベースに保存する
+		//new User("Shouhei Hayakawa", "potatosh", "pttptt12345").save();
+
 		//IDを使ってユーザを探し出す
 		User res = User.find("byUserID", "potatosh").first();
 
@@ -24,6 +29,9 @@ public class BasicTest extends UnitTest {
 	}
 
 	private void connectTest() {
+		//Userを作ってDBに保存
+		//new User("Shouhei Hayakawa", "potatosh", "pttptt12345").save();
+
 		//コネクト(Play! framework mix)
 		assertNotNull(User.connect("potatosh", "pttptt12345"));
 		assertNull(User.connect("potatosh", "ptptpt12345"));

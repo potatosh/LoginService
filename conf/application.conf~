@@ -211,5 +211,3 @@ mail.smtp=mock
 %test.jpa.ddl=create
 %test.mail.smtp=mock
 
-# Import the CRUD Module
-module.crud=${play.path}/modules/crud

@@ -1,7 +1,7 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-<div align="center">
+<div style="align: center">
 <h1>Light Login System</h1>
 	#{if userNum}
 		<p>現在、${userNum}人がログイン中です</p>
